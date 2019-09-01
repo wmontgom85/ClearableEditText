@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingStart="15dp"
+    android:paddingEnd="15dp"
+    android:gravity="center_vertical"
+    android:clipChildren="true"
+    android:padding="10dp"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/border_5dp_ffffff_sb">
+
+    <EditText
+        android:id="@+id/my_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@id/clear_button"
+        android:textColor="@color/dark_grey"
+        android:textColorHint="@color/grey"
+        android:maxLines="1"
+        android:lines="1"
+        android:inputType="text|textNoSuggestions"
+        android:ellipsize="end"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/my_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@id/clear_button"
+        android:textColor="@color/dark_grey"
+        android:textColorHint="@color/grey"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"/>
+
+    <ImageView
+        android:id="@+id/clear_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_clear_white"
+        android:background="@drawable/border_25dp_8e8e93_sb"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toStartOf="@id/chevron"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/chevron"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_small_gray_chevron"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

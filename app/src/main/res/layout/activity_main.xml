@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/grey"
+    android:layout_gravity="top">
+
+    <com.wmontgom85.clearableedittext.ClearableEditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Enter Text"
+        android:inputType="textPersonName|textCapWords"
+        android:imeOptions="actionNext"
+        android:layout_marginTop="20dp"/>
+
+    <com.wmontgom85.clearableedittext.ClearableEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/state"
+        android:hint="Select Option"
+        android:maxLines="1"
+        app:cet_type="select"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>
